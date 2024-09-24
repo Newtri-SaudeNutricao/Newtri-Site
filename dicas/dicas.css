@@ -1,0 +1,30 @@
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+--verde-escuro: #235B2F;
+--laranja:#DE7E00;
+--verde-claro: #519A08;
+--branco: #F3FFE7; 
+
+}
+
+body {
+    background-color: #235B2F;
+}
+
+#dicas-newtri {
+    width: 1280px;
+    height: 420px;
+    background-color: aqua;
+}
