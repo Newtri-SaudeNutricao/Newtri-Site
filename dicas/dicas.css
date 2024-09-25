@@ -23,8 +23,79 @@ body {
     background-color: #235B2F;
 }
 
+.grid-dicas {
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 #dicas-newtri {
     width: 1280px;
     height: 420px;
-    background-color: aqua;
+    background-color: ;
+    margin-top: 50px;
+}
+
+.secao1dicas {
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+}
+
+/* responsividade 1920px ate 320px */
+/* responsividade 1920px ate 320px */
+/* responsividade 1920px ate 320px */
+/* responsividade 1920px ate 320px */
+
+/* RECEITA */
+
+.grid-receita {
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* NUTRICIONISTA */
+
+.grid-nutricionista {
+    position: relative;
+    width: 300px; /* ajuste conforme necessário */
+    height: auto; /* ajuste conforme necessário */
+}
+
+.onda {
+    position: relative;
+}
+
+.onda img {
+    width: 100%; /* ajusta para preencher o contêiner */
+    height: auto; /* mantém a proporção */
+}
+
+
+.foto-nutricionista {
+    position: absolute;
+    top: 182.5%; /* ajuste conforme necessário para ficar dentro da onda */
+    left: 20%; /* ajuste conforme necessário */
+    transform: translate(-50%, -50%); /* centraliza a imagem */
+    width: 60%; /* ajuste conforme necessário */
+    height: auto; /* mantém a proporção */
+    z-index: 1; /* garante que a foto fique sobre a onda */
 }
