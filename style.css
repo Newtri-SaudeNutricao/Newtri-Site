@@ -24,6 +24,8 @@ html{
     color: var(--verde-claro);
 }
 
+/* header - header - header - header - header - header - header - header */
+
 a:visited {
     color: inherit;
 }
@@ -38,19 +40,20 @@ header{
 
 .grid-header {
     height: 100%;
-    width: 80vw;
+    width: 90vw;
     max-width: 1920px;
 
     margin: 0 auto;
 
     display: flex;
-    /* flex-direction: row; */
+    /* flex-direction: row/column; */
     justify-content: space-between;
     align-items: center;
 }
 
 header img{
-    height: 45px;
+    height: 40px;
+    cursor: pointer;
 }
 
 nav ul{
@@ -59,13 +62,13 @@ nav ul{
     color: var(--verde-escuro);
 }
 
-nav ul li:hover{
+nav ul li a:hover{
     color: var(--verde-claro);
     padding-bottom: 5px;
     border-bottom: 2px solid var(--verde-claro);
 }
 
-.logar ul{
+#logar ul{
     display: flex;
     gap: 20px;
     color: var(--verde-escuro);
@@ -100,6 +103,19 @@ header button{
     display: none;
 }
 
+.menu-fechado{
+    display: none;
+}
+
+/* header - header - header - header - header - header - header - header */
+
+
+
+
+
+
+
+
 /* header - header - header - header - header - header - header - header */
 
 @media screen and (max-width: 1000px){
@@ -133,7 +149,7 @@ header button{
         background-color: var(--bege);
     }
 
-    .logar ul{
+    #logar ul{
         display: flex;
         flex-direction: column;
 
@@ -146,15 +162,13 @@ header button{
         right: 0px;
     }
 
-    .logar ul li a{
+    #logar ul li a{
         min-width: 240px;
         min-height: 50px;
 
         display: flex;
         align-items: center;
         justify-content: center;
-
-        
     }
 
     ul li .login{
@@ -177,4 +191,3 @@ header button{
         display: none;
     }
 }
-
