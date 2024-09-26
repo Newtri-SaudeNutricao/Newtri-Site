@@ -109,14 +109,89 @@ header button{
 
 /* header - header - header - header - header - header - header - header */
 
+#hero{
+    height: 85vh;
 
+    font-family: 'Poppins';
+    background-color: var(--bege);
+}
 
+.grid-hero {
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
 
+    margin: 0 auto;
 
+    display: flex;
+    /* flex-direction: row/column; */
+    justify-content: space-between;
+    align-items: center;
+}
 
+#hero h2{
+    font-size: 2.4rem;
 
+    display: flex;
+    text-align: center;
+}
+
+#hero img{
+    margin-left: 40px;
+    width: 60%;
+}
+
+#hero button{
+    height: 50px;
+    width: 200px;
+
+    color: white;
+    background-color: var(--laranja);
+
+    border: none;
+    margin-top: 40px;
+    border-radius: 8px;
+
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#hero button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.hero-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* header - header - header - header - header - header - header - header */
+
+@media screen and (max-width: 1500px){
+    #hero h2{
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 1380px){
+    #hero h2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1270px){
+    .grid-hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hero h2{
+        font-size: 2.2rem;
+        padding-top: 10%;
+    }
+}
 
 @media screen and (max-width: 1000px){
     header button{
@@ -190,4 +265,40 @@ header button{
     .logotipo{
         display: none;
     }
+
+    #hero h2{
+        font-size: 1.8rem;
+    }
+
+    #hero button{
+        height: 50px;
+        width: 180px;
+
+        font-size: 1.1rem;
+    }
 }
+
+@media screen and (max-width: 420px){
+    #hero h2{
+        font-size: 1.6rem;
+    }
+
+    #hero button{
+        height: 50px;
+        width: 180px;
+
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 370px){
+    #hero h2{
+        font-size: 1.4rem;
+    }
+
+    #hero button{
+        height: 50px;
+        width: 180px;
+    }
+}
+
