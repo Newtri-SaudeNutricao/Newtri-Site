@@ -17,7 +17,7 @@
         <div class="grid-header">
             <!-- <img class="logotipo" src="img/logo.svg" alt="Logotipo"> -->
             <img class="logotipo" src="../Utils/Vetores/logotipoNewtri.svg" alt="Logotipo">
-            <img class="isotipo" src="../Utils/Vetores/isotipoNewtri.svg" alt="Isotipo"> 
+            <img class="isotipo" src="../Utils/Vetores/isotipoNewtri.svg" alt="Isotipo">
             <nav id="menu" class="menu">
                 <ul>
                     <li><a href="#">Sobre</a></li>
@@ -51,12 +51,42 @@
     </header>
 
     <!-- header - header - header - header - header - header - header -  -->
-    <div class="textos">
+    <section id="contato">
         <h2>Olá, em que podemos ajudar?</h2>
-    </div>
-    
 
-    
+        <div class="caixas">
+            <div class="campo">
+                <label for="campo-nome">Nome completo:</label>
+                <input id="campo-nome" placeholder="Digite o seu nome..." type="text">
+            </div>
+            <div class="campo">
+                <label for="campo-email">E-mail:</label>
+                <input id="campo-email" placeholder="Digite seu e-mail..." type="email">
+            </div>
+
+            <div class="campo">
+                <label for="campo-estado">Estado:</label>
+                <input id="campo-estado" placeholder="Digite seu estado..." type="text">
+            </div>
+
+            <div class="campo">
+                <label for="campo-cidade">Cidade:</label>
+                <input id="campo-cidade" placeholder="Digite sua cidade..." type="text">
+            </div>
+
+            <div class="campo-descricao">
+                <label for="campo-texto">Descreva o problema que está procurando
+                    solucionar:</label>
+                <textarea placeholder="" id="campo-texto" cols="30"
+                    rows="10"></textarea>
+            </div>
+        </div>
+        <button type="submit">Enviar</button>
+
+    </section>
+
+
+
 
 </body>
 
