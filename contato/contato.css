@@ -21,7 +21,7 @@
 
 html{
     font-family: "Poppins";
-    color: var(--verde-claro);
+    color: var(--verde-escuro);
 }
 
 /* header - header - header - header - header - header - header - header */
@@ -111,6 +111,138 @@ header button{
 
 
 
+body{
+    background-color:#F3FFE7;
+}
+
+h2{
+    margin-top: 40px;
+}
+
+#contato {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato h2 {
+    margin-bottom: 70px;
+}
+
+
+
+#contato .caixas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo, .campo-descricao {
+    margin-bottom: 10px; /* Mantém espaçamento entre os campos */
+}
+
+
+
+.campo {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.campo-descricao {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: var(--verde-escuro);
+    background-color:var(--bege);
+
+    border: solid;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: 5px;
+    outline-color: var(--verde-claro);
+}
+
+.campo-descricao textarea {
+    color: var(--verde-escuro);
+    background-color: var(--bege);
+
+    border: solid;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label, .campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input, .campo-descricao textarea {
+    font-family: "Poppins";
+    font-size: 1.1rem;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 3px solid var(--verde-claro);
+}
+
+#contato button {
+    height: 40px;
+    width: 30%;
+
+    background-color: var(--laranja);
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 1.1rem;
+    font-family: "Poppins";
+    font-weight: 700; /* Bold */
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato button:hover {
+    background-color: #ad4929;
+}
+
+
+
 
 
 
@@ -139,6 +271,9 @@ header button{
         position: absolute;
         top: 100px;
         right: 0px;
+        -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+        box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
     }
 
     nav ul li a{
