@@ -173,6 +173,79 @@ header button{
 
 /* hero - hero - hero - hero - hero - hero - hero - hero - hero - hero */
 
+#sobre{
+    height: fit-content;
+
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    color: var(--bege);
+
+    background-color: var(--verde-escuro);
+    background-image: url(Home/img/Onda.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 200px;
+}
+
+.grid-sobre {
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.titulo-sobre{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titulo-sobre h2{
+    font-size: 1.7rem;
+}
+
+.paragrafo-sobre{
+    margin-bottom: 20px;
+}
+
+#sobre p{
+    width: 75vw;
+    font-size: 1.1rem;
+}
+
+#sobre button{
+    height: 50px;
+    width: 200px;
+
+    color: white;
+    background-color: var(--laranja);
+
+    border: none;
+    margin-top: 40px;
+    border-radius: 8px;
+
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#sobre button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+/* Responsividade - Responsividade - Responsividade - Responsividade - Responsividade */
+
 @media screen and (max-width: 1500px){
     #hero h2{
         font-size: 2.2rem;
@@ -193,6 +266,10 @@ header button{
 }
 
 @media screen and (max-width: 1024px){
+    #hero{
+        height: fit-content;
+    }
+    
     .grid-hero {
         display: flex;
         justify-content: unset;
@@ -283,6 +360,20 @@ header button{
     }
 }
 
+@media screen and (max-width: 845px){
+    #sobre .titulo-sobre{
+        margin-top: 10%;
+    }
+
+    #sobre h2{
+        font-size: 1.5rem;
+    }
+    
+    #sobre p{
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 700px){
     #hero img{
         width: 80vw;
@@ -323,6 +414,10 @@ header button{
 @media screen and (max-width: 470px){
     #hero img{
         min-width: 430px;
+    }
+
+    #sobre h2{
+
     }
 }
 
