@@ -20,6 +20,7 @@
 --verde-claro: #519A08;
 --branco: #F3FFE7; 
 
+
 }
 
 body {
@@ -161,6 +162,42 @@ header button{
 }
 
 /* NUTRICIONISTA */
+#dica-nutricionista {
+    background-image: url(img/onda.svg);
+    background-repeat: no-repeat;
+}
+
+.elementos-nutricionista {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.texto-nutricionista {
+    padding-top: 200px;
+}
+
+.texto-nutricionista h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.texto-nutricionista h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    padding-top: 100px;
+}
+
+.texto-nutricionista p {
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+
+
+
+
 
 
 
@@ -239,4 +276,6 @@ header button{
         display: none;
     }
 }
-/* responsividade-header */
+
+
+
