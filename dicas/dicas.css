@@ -197,6 +197,59 @@ header button{
 
 
 
+/*DIVERSAS-DICAS-DIVERSAS-DICAS-DIVERSAS-DICAS*/
+
+.grid-dicas-diversas {
+    width: 1280px;
+    height: 380px;
+    margin-top: 50px;
+    background-color: ;
+    
+}
+
+.grid-dicas-diversas {
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tres-dicas {
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+    
+}
+
+.newtri-dicas-diversas {
+    height: 380px;
+    width: 300px;
+    background-color: #F3FFE7;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+.tres-dicas h1 {
+    font-size: 18px;
+}
+
+.tres-dicas p {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.tres-dicas img {
+    margin-top: 15px;
+}
+
+
+
 
 
 
