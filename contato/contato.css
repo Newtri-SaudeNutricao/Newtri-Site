@@ -242,7 +242,94 @@ h2{
 }
 
 
+footer{
+    box-sizing: border-box;
+    padding: 40px 0;
+    position: relative;
+}
 
+
+
+#footer {
+    background-image: url(img/fundo-footer1.svg);
+    background-repeat: no-repeat;
+
+    height: 700px;
+
+
+}
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--verde-escuro);
+    color: var(--bege);
+    
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 150px;
+}
+
+.footer-section-logo {
+    
+}
+
+.social-media h3, .navigation h3, .working-hours h3, .address h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    color: var(--bege);
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    color: var(--bege);
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li a {
+    text-decoration: none;
+    color:var(--laranja);
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: var(--laranja);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--verde-escuro);
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--bege);
+}
+
+footer p, footer h3, footer h1 {
+    margin: 0;
+    padding: 0;
+    color: var(--bege);
+}
 
 
 
