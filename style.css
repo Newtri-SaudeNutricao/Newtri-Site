@@ -339,6 +339,8 @@ header button{
     background-color: #a96205;
 }
 
+/* produtos - produtos - produtos - produtos - produtos - produtos - produtos */
+
 #dicas{
     height: 95vh;
 
@@ -419,6 +421,85 @@ header button{
     align-items: flex-start;
 
     margin-left: 5px;
+}
+
+/* dicas - dicas - dicas - dicas - dicas - dicas - dicas - dicas - dicas */
+
+#contato{
+    height: 100vh;
+
+    font-family: 'Poppins';
+
+    background-color: var(--verde-escuro);
+    background-image: url(Home/img/Onda.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 200px;
+}
+
+.grid-contato{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+#contato h2{
+    font-size: 3rem;
+    color: var(--bege);
+    text-transform: uppercase;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.contato-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-contato{
+    height: 45vh;
+    width: 500px;
+
+    display: flex;
+}
+
+#contato img{
+    height: 500px;
+}
+
+
+#contato p{
+    color: var(--bege);
+}
+
+#contato button{
+    height: 50px;
+    width: 200px;
+
+    color: white;
+    background-color: var(--laranja);
+
+    border: none;
+    margin-top: 40px;
+    border-radius: 8px;
+
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#contato button:hover{
+    cursor: pointer;
+    scale: 1.1;
 }
 
 /* Responsividade - Responsividade - Responsividade - Responsividade - Responsividade */
