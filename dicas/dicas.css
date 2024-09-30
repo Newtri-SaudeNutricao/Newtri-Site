@@ -1,6 +1,10 @@
 @font-face {
     /* font-family: ; */
-    src: url();
+    font-family: "poppins";
+    src: url(fontes/Poppins.zip);
+
+    font-family: "cornercafe";
+    src: url(fontes/corner_cafe/Corner\ Cafe.ttf);
 }
 
 
@@ -156,7 +160,7 @@ header button{
 
     display: flex;
 
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
 }
@@ -179,17 +183,23 @@ header button{
 }
 
 .texto-nutricionista h1 {
+    font-family: "cornercafe";
+    color: #235B2F;
     text-align: center;
     font-size: 70px;
 }
 
 .texto-nutricionista h2 {
-    text-align: center;
+    font-family: "poppins";
+    color: #235B2F;
+    text-align: center; 
     font-size: 1.7rem;
     padding-top: 100px;
 }
 
 .texto-nutricionista p {
+    font-family: "poppins";
+    color: #235B2F;
     text-align: center;
     font-size: 1.1rem;
     padding-top: 20px;
@@ -213,7 +223,7 @@ header button{
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -221,12 +231,13 @@ header button{
     display: flex;
     justify-content: space-between;
     gap: 75px;
+    padding-top: 50px;
     
 }
 
 .newtri-dicas-diversas {
     height: 380px;
-    width: 300px;
+    width: 310px;
     background-color: #F3FFE7;
     text-align: center;
     border-radius: 20px;
@@ -234,10 +245,14 @@ header button{
 }
 
 .tres-dicas h1 {
+    font-family: "poppins";
+    color: #235B2F;
     font-size: 18px;
 }
 
 .tres-dicas p {
+    font-family: "poppins";
+    color: #235B2F;
     margin-top: 5px;
     padding: 10px;
     font-size: 16px;
