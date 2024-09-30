@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url(Utils/Tipografia/Poppins.zip);
 }
 
@@ -248,7 +248,6 @@ header button{
     scale: 1.1;
 }
 
-
 /* sobre - sobre - sobre - sobre - sobre - sobre - sobre - sobre */
 
 #produtos{
@@ -462,23 +461,35 @@ header button{
 
 
 .contato-row{
+    width: 50vw;
+
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    gap: 30px;
 }
 
 .text-contato{
     height: 45vh;
-    width: 500px;
+    /* width: 500px; */
 
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
 }
 
 #contato img{
-    height: 500px;
+    width: 450px;
 }
 
 
 #contato p{
+    font-size: 1.5rem;
     color: var(--bege);
 }
 
@@ -500,6 +511,99 @@ header button{
 #contato button:hover{
     cursor: pointer;
     scale: 1.1;
+}
+
+/* contato - contato - contato - contato - contato - contato - contato - contato - contato */
+
+footer{
+    height: fit-content;
+
+    font-family: 'Poppins';
+    color: var(--verde-escuro);
+    background-color: var(--bege);
+}
+
+.grid-footer{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 250px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+
+    gap: 100px;
+}
+
+footer h4{
+    font-size: 1.1rem;
+
+    margin-bottom: 10px;
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+footer .redes-sociais-icones{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.navegacao h4{
+    margin-bottom: 50px;
+}
+
+.navegacao ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.horario, .endereco{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.text-horario, .text-endereco{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-horario svg, .text-endereco svg{
+    margin-right: 25px;
+}
+
+.footer-last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 25px;
 }
 
 /* Responsividade - Responsividade - Responsividade - Responsividade - Responsividade */
@@ -610,6 +714,30 @@ header button{
     ul li .cadastro{
         background-color: var(--bege);
     }
+
+    #contato{
+        height: fit-content;
+    }
+
+    #contato img{
+        margin-top: 40px;
+    }
+
+    .contato-row{
+        display: flex;
+        flex-direction: column-reverse;
+
+        gap: 0px;
+    }
+
+    .text-contato{
+        height: 200px;
+    }
+
+    #contato p{
+        min-width: 394px;
+    }
+
 }
 
 @media screen and (max-width: 900px){
@@ -674,15 +802,25 @@ header button{
     #hero img{
         min-width: 450px;
     }
+
+    #contato img{
+        width: 350px;
+    }
 }
 
 @media screen and (max-width: 470px){
     #hero img{
         min-width: 430px;
     }
+}
 
-    #sobre h2{
 
+@media screen and (max-width: 470px){
+    #contato h2{
+        font-size: 2.5rem;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
@@ -700,6 +838,10 @@ header button{
 
     #hero img{
         min-width: 380px;
+    }
+
+    #contato p{
+        min-width: 294px;
     }
 }
 
@@ -722,6 +864,14 @@ header button{
     #hero img{
         min-width: 320px;
     }
+
+    #contato img{
+        width: 300px;
+    }
+
+    #contato h2{
+        font-size: 2.2rem;
+    }
 }
 
 @media screen and (max-width: 340px){
@@ -732,6 +882,4 @@ header button{
     #produtos h2{
         font-size: 1.6rem;
     }
-
-    
 }
