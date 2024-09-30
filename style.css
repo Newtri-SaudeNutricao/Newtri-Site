@@ -62,7 +62,11 @@ header img{
     cursor: pointer;
 }
 
-
+nav ul{
+    display: flex;
+    gap: 45px;
+    color: var(--verde-escuro);
+}
 nav ul li a:hover{
     color: var(--verde-claro);
     padding-bottom: 5px;
@@ -458,5 +462,3 @@ header button{
         min-width: 320px;
     }
 }
-
-
