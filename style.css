@@ -574,8 +574,13 @@ footer .redes-sociais-icones{
     margin-top: 20px;
 }
 
-.redes-sociais-icones svg{
-    fill: var(--laranja);
+.icon-color{
+    fill: var(--verde-escuro);
+}
+
+.icon-color:hover{
+    fill: var(--verde-claro);
+    cursor: pointer;
 }
 
 .navegacao h4{
@@ -588,6 +593,11 @@ footer .redes-sociais-icones{
     align-items: center;
 
     gap: 10px;
+}
+
+.navegacao ul li:hover{
+    color: var(--verde-claro);
+    cursor: pointer;
 }
 
 .horario, .endereco{
@@ -613,6 +623,8 @@ footer .redes-sociais-icones{
 
     margin-top: 100px;
     margin-bottom: 25px;
+
+    cursor: pointer;
 }
 
 /* Responsividade - Responsividade - Responsividade - Responsividade - Responsividade */
