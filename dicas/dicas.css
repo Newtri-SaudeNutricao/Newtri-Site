@@ -54,7 +54,7 @@ header{
     margin: 0 auto;
 
     display: flex;
-    /* flex-direction: row/column; */
+    flex-direction: row/column; 
     justify-content: space-between;
     align-items: center;
 }
@@ -127,18 +127,21 @@ header button{
 
     display: flex;
 
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
 }
 
 #dicas-newtri {
-    width: 1280px;
-    height: 420px;
+   
     margin-top: 50px;
 }
 
 .secao1dicas {
+
+    /* height: fit-content; */
+    /* width: 100%; */
+
     display: flex;
     justify-content: space-between;
     gap: 160px;
@@ -213,7 +216,7 @@ header button{
     width: 1280px;
     height: 380px;
     margin-top: 50px;
-    background-color: ;
+    
     
 }
 
@@ -263,9 +266,205 @@ header button{
     margin-top: 15px;
 }
 
+/* RESPONSIVIDADE-RESPONSIVIDADE-RESPONSIVIDADE */
+
+@media screen and (max-width: 1270px) {
+
+    .secao1dicas {
+        gap: 90px;
+    }
+
+    .grid-dicas {
+        width: 1100px;
+    }
+
+    .receita-granola img {
+        width: 1100px;
+    }
+
+    .grid-nutricionista {
+        width: 1200px;
+    }
+}
 
 
+@media screen and (max-width: 1100px) {
 
+    .grid-dicas {
+        width: 1070px;
+    }
+
+    .secao1dicas {
+        gap: 20px;
+    }
+
+    .grid-nutricionista {
+        width: 1100px;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .grid-dicas {
+        width: 1000px;
+    }
+
+    .receita-granola img {
+        width: 1000px;
+    }
+
+    .grid-nutricionista {
+        width: 1000px;
+    }
+
+    .tres-dicas {
+        gap: 10px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .grid-dicas {
+        width: 900px;
+    }
+
+    .grid-nutricionista {
+        width: 900px;
+    }
+
+    .receita-granola img {
+        width: 900px;
+    }
+
+    .tres-dicas {
+        width: 800px;
+    }
+
+    .newtri-dicas-diversas {
+        height: 450px;
+    }
+
+    .tres-dicas img {
+        width: 250px;
+    }
+    
+    .secao1dicas img {
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .grid-dicas {
+        width: 800px;
+    }
+
+    .grid-nutricionista {
+        width: 800px;
+    }
+
+    .receita-granola img {
+        width: 800px;
+    }
+
+    .tres-dicas {
+        width: 700px;
+    }
+
+
+    .newtri-dicas-diversas {
+        height: 400px;
+    }
+
+    .tres-dicas img {
+        width: 200px;
+    }
+    
+    .secao1dicas img {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .grid-dicas {
+        width: 700px;
+    }
+
+    .grid-nutricionista {
+        width: 700px;
+    }
+
+    .receita-granola img {
+        width: 700px;
+    }
+
+    .tres-dicas {
+        width: 700px;
+    }
+
+    .texto-nutricionista h1 {
+        font-size: 40px;
+
+    }
+
+    .texto-nutricionista h2 {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .grid-dicas {
+        width: 600px;
+    }
+
+    .grid-nutricionista {
+        width: 600px;
+    }
+
+    .receita-granola img {
+        width: 600px;
+    }
+
+    .tres-dicas {
+        width: 600px;
+    }
+
+    .tres-dicas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newtri-dicas-diversas {
+        height: 400px;
+        width: 320px;
+    }
+
+    .tres-dicas img {
+        width: 300px;
+    }
+    
+    .secao1dicas img {
+        width: 200px;
+    }
+
+    .secao1dicas img {
+        width: 150px;
+    }
+
+}
 
 
 
