@@ -20,8 +20,7 @@
 }
 
 html{
-    font-family: "Poppins";
-    /* color: var(--verde-claro); */
+    font-family: "Poppins", sans-serif;
     background-color: var(--bege);
 }
 
@@ -248,7 +247,6 @@ header button{
     scale: 1.1;
 }
 
-
 /* sobre - sobre - sobre - sobre - sobre - sobre - sobre - sobre */
 
 #produtos{
@@ -426,7 +424,7 @@ header button{
 /* dicas - dicas - dicas - dicas - dicas - dicas - dicas - dicas - dicas */
 
 #contato{
-    height: 100vh;
+    height: fit-content;
 
     font-family: 'Poppins';
 
@@ -462,23 +460,35 @@ header button{
 
 
 .contato-row{
+    width: 50vw;
+
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    gap: 30px;
 }
 
 .text-contato{
     height: 45vh;
-    width: 500px;
+    /* width: 500px; */
 
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
 }
 
 #contato img{
-    height: 500px;
+    width: 450px;
 }
 
 
 #contato p{
+    font-size: 1.5rem;
     color: var(--bege);
 }
 
@@ -502,6 +512,109 @@ header button{
     scale: 1.1;
 }
 
+/* contato - contato - contato - contato - contato - contato - contato - contato - contato */
+
+footer{
+    height: fit-content;
+    margin-top: 50px;
+
+
+    font-family: 'Poppins';
+    color: var(--verde-escuro);
+    background-color: var(--bege);
+}
+
+.grid-footer{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 150px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+
+    gap: 100px;
+}
+
+footer img{
+    width: 200px;
+}
+
+footer h4{
+    font-size: 1.1rem;
+
+    margin-bottom: 10px;
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+footer .redes-sociais-icones{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.redes-sociais-icones svg{
+    fill: var(--laranja);
+}
+
+.navegacao h4{
+    margin-bottom: 50px;
+}
+
+.navegacao ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.horario, .endereco{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.text-horario, .text-endereco{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-horario svg, .text-endereco svg{
+    margin-right: 25px;
+}
+
+.footer-last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
 /* Responsividade - Responsividade - Responsividade - Responsividade - Responsividade */
 
 @media screen and (max-width: 1500px){
@@ -514,12 +627,26 @@ header button{
     #hero h2{
         font-size: 2rem;
     }
+
+    #contato p{
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 1270px){
     #hero h2{
         font-size: 2.2rem;
         padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .footer-row{
+        gap: 50px;
+    }
+
+    #contato p{
+        width: 250px;
     }
 }
 
@@ -537,6 +664,21 @@ header button{
     #hero img{
         margin: 0px;
         margin-top: 20px;
+    }
+
+    .footer-row{
+        gap: 50px;
+    }
+
+    #contato p{
+        width: 450px;
+    }
+
+    .contato-row{
+        display: flex;
+        flex-direction: column-reverse;
+
+        gap: 0px;
     }
 }
 
@@ -610,11 +752,40 @@ header button{
     ul li .cadastro{
         background-color: var(--bege);
     }
+
+    #contato{
+        height: fit-content;
+    }
+
+    #contato img{
+        margin-top: 40px;
+    }
+
+    .text-contato{
+        height: 200px;
+    }
+
+    #contato p{
+        min-width: 394px;
+    }
+
 }
 
 @media screen and (max-width: 900px){
     #hero img{
         width: 70vw;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .footer-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -638,6 +809,12 @@ header button{
     }
 }
 
+@media screen and (max-width: 790px){
+    .footer-row{
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 700px){
     #hero img{
@@ -670,9 +847,26 @@ header button{
     }
 }
 
+@media screen and (max-width: 560px){
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 500px){
     #hero img{
         min-width: 450px;
+    }
+
+    #contato img{
+        width: 350px;
     }
 }
 
@@ -680,9 +874,21 @@ header button{
     #hero img{
         min-width: 430px;
     }
+    
+    #contato h2{
+        font-size: 2.5rem;
 
-    #sobre h2{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
+    #contato p{
+        width: fit-content;
+        font-size: 1.1rem;
+    }
+
+    #contato button{
+        /* gap: 50px; */
     }
 }
 
@@ -700,6 +906,10 @@ header button{
 
     #hero img{
         min-width: 380px;
+    }
+
+    #contato p{
+        min-width: 294px;
     }
 }
 
@@ -722,6 +932,14 @@ header button{
     #hero img{
         min-width: 320px;
     }
+
+    #contato img{
+        width: 300px;
+    }
+
+    #contato h2{
+        font-size: 2.2rem;
+    }
 }
 
 @media screen and (max-width: 340px){
@@ -733,5 +951,7 @@ header button{
         font-size: 1.6rem;
     }
 
-    
+    #contato h2{
+        font-size: 2.1rem;
+    }
 }
