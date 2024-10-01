@@ -100,17 +100,29 @@ body {
 }
  
 #sobre {
-    height: 550px;
-    padding: 100px 25%;
- 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- 
-    text-align: center;
+    height: fit-content;
+
+    /* text-align: center; */
 
     color: white;
+    background-image: url(img/onda\ 2.0.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 200px;
 
+}
+
+#sobre .grid-sobre{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
 }
 
 h1{
@@ -120,27 +132,138 @@ h1{
     margin-bottom: 30px;
     font-family:"Poppins";
 
+    margin-top: 50px;
+    
+    text-align: center;
+
 }
 
-#sobre p {
+#sobre p{
 
-    max-width: 600px;
-  text-align: left; /* Alinha o texto à esquerda */
-  font-size: 18px;
-  line-height: 1.6;
-    font-family:"Poppins";
+    width: fit-content;
+    max-width: 750px;
 
-  
+    margin-bottom: 50px;
+
+    font-size: 1.2rem;
+    font-family: "Poppins";
 }
 
 #sobre .teste{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+    
+    height: 240px;
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+#sobre .teste3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #sobre img{
-    height: 500px;
+    width: 30vw;
 }
 
 #sobre .teste2{
-    width: 500px;
+    /* width: 500px; */
+}
+
+
+/* MVV */
+
+#mvv{
+    height: fit-content;
+    width: 100%;
+
+    background-color: var(--bege);
+}
+
+.visao {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    align-items: center;
+    /* justify-content: center; */
+
+    margin-bottom: 50px;
+
+
+    
+}
+
+.textovisao{
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 150px;
+
+    
+}
+
+.textovisao p{
+    width: 30%;
+}
+
+.missao{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    align-items: center;
+    /* justify-content: center; */
+
+    margin-bottom: 50px;
+}
+
+.textomissao{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 150px;
+
+}
+
+.textomissao p{
+    width: 30%;
+}
+
+.valores{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    align-items: center;
+    /* justify-content: center; */
+
+    margin-bottom: 50px;
+
+}
+
+.textovalores{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 150px;
+
+}
+
+.textovalores p{
+    width: 30%;
+}
+
+#mvv p, #mvv h2{
+    font-family: "Poppins";
+    color: var(--verde-escuro);
 }
