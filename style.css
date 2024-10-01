@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url(Utils/Tipografia/Poppins.zip);
 }
 
@@ -542,7 +542,7 @@ footer{
     flex-direction: row;
     align-items: center;
 
-    gap: 150px;
+    gap: 250px;
 }
 
 .footer-column{
