@@ -212,12 +212,23 @@ header button{
 
 /*DIVERSAS-DICAS-DIVERSAS-DICAS-DIVERSAS-DICAS*/
 
+#dicas{
+
+    height: fit-content;
+
+    background-image: url(img/OndaFooter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 350px;
+}
+
 .grid-dicas-diversas {
     width: 1280px;
     height: 380px;
     margin-top: 50px;
-    
-    
+
+
 }
 
 .grid-dicas-diversas {
@@ -228,6 +239,8 @@ header button{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
 }
 
 .tres-dicas {
@@ -264,6 +277,123 @@ header button{
 
 .tres-dicas img {
     margin-top: 15px;
+}
+
+
+/* FOOTER-FOOTER-FOOTER-FOOTER-FOOTER-FOOTER */
+
+footer{
+    height: fit-content;
+    /* margin-top: 50px; */
+
+    font-family: 'Poppins';
+    color: var(--verde-escuro);
+    background-color: var(--branco);
+
+    
+}
+
+.grid-footer{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 250px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+
+    gap: 100px;
+}
+
+footer img{
+    width: 200px;
+}
+
+footer h4{
+    font-size: 1.1rem;
+
+    margin-bottom: 10px;
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+footer .redes-sociais-icones{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.icon-color{
+    fill: var(--verde-escuro);
+}
+
+.icon-color:hover{
+    fill: var(--verde-claro);
+    cursor: pointer;
+}
+
+.navegacao h4{
+    margin-bottom: 50px;
+}
+
+.navegacao ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.navegacao ul li:hover{
+    color: var(--verde-claro);
+    cursor: pointer;
+}
+
+.horario, .endereco{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.text-horario, .text-endereco{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-horario svg, .text-endereco svg{
+    margin-right: 25px;
+}
+
+.footer-last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 25px;
+
+    cursor: pointer;
 }
 
 
@@ -646,11 +776,7 @@ header button{
         align-items: center;
     }
 
-
 }
-
-
-
 
 
 /* responsividade-header */
@@ -730,3 +856,46 @@ header button{
 
 
 
+/* RESPONSIVIDADE-FOOTER-RESPONSIVIDADE-FOOTER */
+
+@media screen and (max-width: 860px){
+    .footer-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .footer-row{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .isotipo{
+        display: unset;
+    }
+    
+    .logotipo{
+        display: none;
+    }
+}
