@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(Utils/Tipografia/Poppins.zip);
+}
+
+
+
+:root {
+    --verde-escuro: #235B2F;
+    --verde-claro: #519A08;
+    --bege: #F3FFE7;
+    --laranja: #DE7E00;
+}
+
+body {
+    background-color: var(--bege);
+    /* background-image: url(Imagens/Group\ 28\ \(1\).svg); */
+    color: var(--verde-escuro);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: "Poppins";
+    color: var(--verde-claro);
+}
+
+/* header */
+
+header {
+    height: 10vh;
+    background-color: var(--bege);
+}
+
+.grid-header {
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+
+    margin: 0 auto;
+
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 45px;
+}
+
+nav ul {
+    display: flex;
+    gap: 45px;
+    color: var();
+}
+
+.logar ul {
+    display: flex;
+    gap: 45px;
+}
+
+/* header ^^ */
+
+/* produtos texto */
+
+
+
+div.produtos-txt {
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 27vh; */
+    height: fit-content;
+    background-image: url(Imagens/Group\ 28\ \(1\).svg);
+    padding-bottom: 7%;
+}
+
+h1.title-p {
+    margin-top: 5%;
+}
+
+p.intro-p {
+    text-align: center;
+    margin-top: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/* produtos texto ^^ */
+
+/* produtos */
+
+main {
+    height: 130vh;
+    color: var(--bege);
+    background-color: var(--verde-escuro);
+    background-image: url(Imagens/Group\ \(2\).svg);
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+
+}
+
+
+
+.funciona-pls{
+    height: fit-content;
+    background-image: url(Imagens/OndaFooter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 200px;
+}
+
+.produto img {
+    width: 18vw;
+    margin-top: 10vh;
+    margin-left: 10vh;
+    border-radius: 5%;
+}
+
+.produto-info{
+    margin-top: 3%;
+}
+
+.produto-info h2 {
+    margin-left: 2%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.produto-info p {
+    margin-left: 2%;
+    text-align: center;
+}
+
+/* produto 1 ^^ */
+
+/* produto 2 */
+
+.produto-r{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin-left: 1%;
+}
+
+.produto-r img {
+    width: 18vw;
+    margin-top: 10vh;
+    margin-right: 9vh;
+    border-radius: 5%;
+}
+
+.produto-info-r{
+    margin-top: 2%;
+}
+
+.produto-info-r h2 {
+    margin-right: 3%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.produto-info-r p {
+    margin-right: 3%;
+    text-align: center;
+}
+
+/* footer */
+
+footer{
+    height: fit-content;
+    margin-top: 7%;
+
+
+    font-family: 'Poppins';
+    color: var(--verde-escuro);
+    background-color: var(--bege);
+}
+
+.grid-footer{
+    height: 100%;
+    width: 80vw;
+    max-width: 1920px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 250px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+
+    gap: 100px;
+}
+
+footer img{
+    width: 200px;
+}
+
+footer h4{
+    font-size: 1.1rem;
+
+    margin-bottom: 10px;
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+footer .redes-sociais-icones{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.icon-color{
+    fill: var(--verde-escuro);
+}
+
+.icon-color:hover{
+    fill: var(--verde-claro);
+    cursor: pointer;
+}
+
+.navegacao h4{
+    margin-bottom: 50px;
+}
+
+.navegacao ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.navegacao ul li:hover{
+    color: var(--verde-claro);
+    cursor: pointer;
+}
+
+.horario, .endereco{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.text-horario, .text-endereco{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-horario svg, .text-endereco svg{
+    margin-right: 25px;
+}
+
+.footer-last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 25px;
+
+    cursor: pointer;
+}
+
+/* footer ^^ */
