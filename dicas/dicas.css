@@ -560,6 +560,11 @@ footer .redes-sociais-icones{
     .secao1dicas img {
         width: 200px;
     }
+
+    #dicas {
+        padding-bottom: 150px;
+       
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -591,6 +596,11 @@ footer .redes-sociais-icones{
     
     .secao1dicas img {
         width: 180px;
+    }
+
+    #dicas {
+        padding-bottom: 150px;
+       
     }
 }
 
@@ -625,6 +635,11 @@ footer .redes-sociais-icones{
         width: 200px;
     }
 
+    #dicas {
+        padding-bottom: 150px;
+       
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -653,6 +668,11 @@ footer .redes-sociais-icones{
     .texto-nutricionista h2 {
         font-size: 16px;
         padding-top: 20px;
+    }
+
+    #dicas {
+        padding-bottom: 150px;
+       
     }
 
 }
@@ -699,6 +719,11 @@ footer .redes-sociais-icones{
         width: 150px;
     }
 
+    #dicas {
+        padding-bottom: 100px;
+       
+    }
+
 }
 
 
@@ -739,7 +764,10 @@ footer .redes-sociais-icones{
         align-items: center;
     }
 
-
+    #dicas {
+        padding-bottom: 100px;
+       
+    }
 
 }
 
