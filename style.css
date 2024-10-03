@@ -21,6 +21,7 @@
 
 html{
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
     background-color: var(--bege);
 }
 
@@ -30,8 +31,13 @@ a:visited {
     color: inherit;
 }
 
+.btn-hero:visited, .btn-sobre:visited, .btn-contato:visited{
+    color: white;
+}
+
 header{
     height: 15vh;
+
     background-color: var(--bege);
     -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
@@ -148,7 +154,7 @@ header button{
     width: 60%;
 }
 
-#hero button{
+/* #hero button{
     height: 50px;
     width: 200px;
 
@@ -161,9 +167,22 @@ header button{
 
     font-weight: 600;
     font-size: 1.1rem;
+} */
+
+.btn-hero{
+    color: var(--bege);
+    background-color: var(--laranja);
+
+    border: none;
+    margin-top: 40px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 8px;
+
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
-#hero button:hover{
+.btn-hero:hover{
     cursor: pointer;
     scale: 1.1;
 }
@@ -188,7 +207,7 @@ header button{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
 }
 
 .grid-sobre {
@@ -227,7 +246,7 @@ header button{
     font-size: 1.1rem;
 }
 
-#sobre button{
+/* #sobre button{
     height: 50px;
     width: 200px;
 
@@ -240,9 +259,26 @@ header button{
 
     font-weight: 500;
     font-size: 1.1rem;
+} */
+
+.btn-sobre{
+    /* height: 50px;
+    width: 200px; */
+    
+    color: white;
+    background-color: var(--laranja);
+
+    border: none;
+    margin-top: 40px;
+    padding: 20px 60px 20px 60px;
+    border-radius: 8px;
+
+    font-weight: 500;
+    font-size: 1.1rem;
+    
 }
 
-#sobre button:hover{
+.btn-sobre:hover{
     cursor: pointer;
     scale: 1.1;
 }
@@ -421,6 +457,11 @@ header button{
     margin-left: 5px;
 }
 
+.text-dicas a{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 /* dicas - dicas - dicas - dicas - dicas - dicas - dicas - dicas - dicas */
 
 #contato{
@@ -501,6 +542,19 @@ header button{
 
     border: none;
     margin-top: 40px;
+    border-radius: 8px;
+
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.btn-contato{
+    color: white;
+    background-color: var(--laranja);
+
+    border: none;
+    margin-top: 40px;
+    padding: 15px 40px 15px 40px;
     border-radius: 8px;
 
     font-weight: 500;
