@@ -357,7 +357,7 @@ header button{
     margin-bottom: 5px;
 }
 
-#produtos button{
+/* #produtos button{
     width: 100%;
     height: 50px;
 
@@ -369,6 +369,25 @@ header button{
 }
 
 #produtos button:hover{
+    cursor: pointer;
+    background-color: #a96205;
+} */
+
+#produtos a{
+    width: 100%;
+    height: 50px;
+
+    color: white;
+    background-color: var(--laranja);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0px 0px 15px 15px;
+
+    text-align: center;
+    padding-top: 10px;
+}
+
+#produtos a:hover{
     cursor: pointer;
     background-color: #a96205;
 }

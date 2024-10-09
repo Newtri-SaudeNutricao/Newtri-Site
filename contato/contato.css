@@ -120,18 +120,16 @@ h2{
 }
 
 #contato {
-    
+
     text-align: center;
 
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     margin-bottom: 100px;
 }
 
 #contato h2 {
     margin-bottom: 70px;
 }
-
-
 
 #contato .caixas{
     display: flex;
@@ -142,8 +140,6 @@ h2{
 .campo, .campo-descricao {
     margin-bottom: 10px; /* Mantém espaçamento entre os campos */
 }
-
-
 
 .campo {
     width: 60%;
@@ -170,13 +166,13 @@ h2{
 }
 
 .campo input {
-    height: 40px;
+    height: 45px;
 
     color: var(--verde-escuro);
     background-color:var(--bege);
 
     border: solid;
-    border-radius: 4px;
+    border-radius: 8px;
 
     text-indent: 10px;
 
@@ -189,7 +185,7 @@ h2{
     background-color: var(--bege);
 
     border: solid;
-    border-radius: 4px;
+    border-radius: 8px;
 
     outline: none;
 
@@ -219,13 +215,13 @@ h2{
 
 #contato button {
     height: 40px;
-    width: 30%;
+    width: 20%;
 
     background-color: var(--laranja);
     color: white;
 
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
 
     font-size: 1.1rem;
     font-family: "Poppins";
@@ -242,6 +238,7 @@ h2{
     background-color: #ad4929;
 }
 
+/* footer - footer - footer - footer - footer - footer - footer - footer */
 
 footer{
     height: fit-content;
@@ -365,14 +362,7 @@ footer .redes-sociais-icones{
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-/* header - header - header - header - header - header - header - header */
+/* responsividade - responsividade - responsividade - responsividade - responsividade */
 
 @media screen and (max-width: 1000px){
     header button{
@@ -451,12 +441,48 @@ footer .redes-sociais-icones{
         display: flex;
         flex-direction: row;
     }
+
+    .campo {
+        width: 80%;
+    
+        text-align: left;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        margin-bottom: 30px;
+    }
+    
+    .campo-descricao {
+        width: 80%;
+    }
+
+    #contato button {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 790px){
     .footer-row{
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 670px){
+    #contato button {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .isotipo{
+        display: unset;
+    }
+    
+    .logotipo{
+        display: none;
     }
 }
 
@@ -473,12 +499,3 @@ footer .redes-sociais-icones{
     }
 }
 
-@media screen and (max-width: 600px){
-    .isotipo{
-        display: unset;
-    }
-    
-    .logotipo{
-        display: none;
-    }
-}
