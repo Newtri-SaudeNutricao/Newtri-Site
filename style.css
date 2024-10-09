@@ -57,12 +57,7 @@ header{
     align-items: center;
 }
 
-header img{
-    height: 40px;
-    cursor: pointer;
-}
-
-header img{
+header a img{
     height: 40px;
     cursor: pointer;
 }
