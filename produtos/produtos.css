@@ -14,7 +14,6 @@
 
 body {
     background-color: var(--bege);
-    /* background-image: url(Imagens/Group\ 28\ \(1\).svg); */
     color: var(--verde-escuro);
 }
 
@@ -32,39 +31,88 @@ html {
     color: var(--verde-claro);
 }
 
-/* header */
+a:visited {
+    color: inherit;
+}
 
-header {
-    height: 10vh;
+.btn-hero:visited, .btn-sobre:visited, .btn-contato:visited{
+    color: white;
+}
+
+header{
+    height: 15vh;
+
     background-color: var(--bege);
+    -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+    box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
 }
 
 .grid-header {
     height: 100%;
-    width: 80vw;
+    width: 90vw;
     max-width: 1920px;
 
     margin: 0 auto;
 
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
 }
 
-header img {
-    height: 45px;
+header img{
+    height: 40px;
+    cursor: pointer;
 }
 
-nav ul {
+nav ul{
     display: flex;
     gap: 45px;
-    color: var();
+    color: var(--verde-escuro);
+}
+nav ul li a:hover{
+    color: var(--verde-claro);
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--verde-claro);
 }
 
-.logar ul {
+#logar ul{
     display: flex;
-    gap: 45px;
+    gap: 20px;
+    color: var(--verde-escuro);
+}
+
+ul li .login{
+    color: white;
+    background-color: var(--verde-escuro);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+ul li .cadastro:hover{
+    color: var(--verde-claro);
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--verde-claro);
+}
+
+ul li .login:hover{
+    background-color: var(--verde-claro);
+}
+
+header button{
+    display: none;
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.isotipo{
+    display: none;
+}
+
+.menu-fechado{
+    display: none;
 }
 
 /* header ^^ */
@@ -295,3 +343,124 @@ footer .redes-sociais-icones{
 }
 
 /* footer ^^ */
+
+/* responsividade */
+
+@media screen and (max-width: 1070px){
+    
+    .footer-row{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .footer-row{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    header button{
+        display: unset;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--bege);
+        padding: 10px;
+        gap: 10px;
+
+        align-items: center;
+
+        position: absolute;
+        top: 100px;
+        right: 0px;
+
+        -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+        box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+    }
+
+    nav ul li a{
+        min-width: 240px;
+        min-height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--bege);
+    }
+
+    #logar ul{
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--bege);
+        padding: 10px;
+        gap: 10px;
+
+        position: absolute;
+        top: 350px;
+        right: 0px;
+
+        -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+        box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+    }
+
+    #logar ul li a{
+        min-width: 240px;
+        min-height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul li .login{
+        background-color: var(--verde-escuro);
+        padding: 15px 45px 15px;
+        border-radius: 10px;
+    }
+
+    ul li .cadastro{
+        background-color: var(--bege);
+    }
+
+}
+
+@media screen and (max-width: 860px){
+    .footer-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .footer-row{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+    }
+}

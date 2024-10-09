@@ -1,10 +1,9 @@
 @font-face {
-    /* font-family: ; */
     font-family: "poppins";
-    src: url(fontes/Poppins.zip);
+    src: url(../Utils/Tipografia/Poppins.zip);
 
     font-family: "cornercafe";
-    src: url(fontes/corner_cafe/Corner\ Cafe.ttf);
+    src: url(../Utils/Tipografia/corner_cafe.zip);
 }
 
 
@@ -32,6 +31,10 @@ body {
     background-color: #235B2F;
 }
 
+html{
+    font-family: 'poppins';
+}
+
 
 /* header - header - header - header - header - header - header - header */
 
@@ -39,14 +42,17 @@ a:visited {
     color: inherit;
 }
 
+.btn-hero:visited, .btn-sobre:visited, .btn-contato:visited{
+    color: white;
+}
+
 header{
     height: 15vh;
+
     background-color: var(--branco);
     -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
     box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
-
-    font-family: "Poppins";
 }
 
 .grid-header {
@@ -57,7 +63,6 @@ header{
     margin: 0 auto;
 
     display: flex;
-    flex-direction: row/column; 
     justify-content: space-between;
     align-items: center;
 }
@@ -71,13 +76,7 @@ nav ul{
     display: flex;
     gap: 45px;
     color: var(--verde-escuro);
-    
 }
-
-nav ul li{
-    font-weight: lighter;
-}
-
 nav ul li a:hover{
     color: var(--verde-claro);
     padding-bottom: 5px;
@@ -88,7 +87,6 @@ nav ul li a:hover{
     display: flex;
     gap: 20px;
     color: var(--verde-escuro);
-    
 }
 
 ul li .login{
@@ -96,7 +94,6 @@ ul li .login{
     background-color: var(--verde-escuro);
     padding: 15px;
     border-radius: 10px;
-    
 }
 
 ul li .cadastro:hover{
@@ -409,6 +406,129 @@ footer .redes-sociais-icones{
 
 
 /* RESPONSIVIDADE-RESPONSIVIDADE-RESPONSIVIDADE */
+
+/* responsividade header, footer */
+
+@media screen and (max-width: 1070px){
+    
+    .footer-row{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .footer-row{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    header button{
+        display: unset;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--bege);
+        padding: 10px;
+        gap: 10px;
+
+        align-items: center;
+
+        position: absolute;
+        top: 100px;
+        right: 0px;
+
+        -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+        box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+    }
+
+    nav ul li a{
+        min-width: 240px;
+        min-height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--bege);
+    }
+
+    #logar ul{
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--bege);
+        padding: 10px;
+        gap: 10px;
+
+        position: absolute;
+        top: 350px;
+        right: 0px;
+
+        -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+        box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.6);
+    }
+
+    #logar ul li a{
+        min-width: 240px;
+        min-height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul li .login{
+        background-color: var(--verde-escuro);
+        padding: 15px 45px 15px;
+        border-radius: 10px;
+    }
+
+    ul li .cadastro{
+        background-color: var(--bege);
+    }
+
+}
+
+@media screen and (max-width: 860px){
+    .footer-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .footer-row{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* responsividade header, footer ^^ */
 
 @media screen and (max-width: 1270px) {
 
