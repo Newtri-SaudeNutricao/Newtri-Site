@@ -545,7 +545,7 @@ footer .redes-sociais-icones{
     }
 
     .grid-nutricionista {
-        width: 1200px;
+        width: 1270px;
     }
 }
 
@@ -695,6 +695,18 @@ footer .redes-sociais-icones{
         padding-bottom: 150px;
        
     }
+
+    .texto-nutricionista h1 {
+        font-size: 40px;
+
+    }
+
+    .texto-nutricionista h2 {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+   
 }
 
 @media screen and (max-width: 860px) {
@@ -732,6 +744,8 @@ footer .redes-sociais-icones{
         padding-bottom: 150px;
        
     }
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -778,7 +792,13 @@ footer .redes-sociais-icones{
 
 @media screen and (max-width: 768px) {
 
+.grid-dicas {
+    width: 768px;
+}
 
+.receita-granola img {
+    width: 550px;
+}
 
     .texto-nutricionista h2 {
         padding-top: 20px;
@@ -793,8 +813,14 @@ footer .redes-sociais-icones{
 @media screen and (max-width: 700px) {
 
     .grid-dicas {
-        width: 700px;
+        width: 600px;
     }
+    
+    .receita-granola img {
+        width: 550px;
+    }
+
+    
 
     .grid-nutricionista {
         width: 700px;
@@ -828,12 +854,14 @@ footer .redes-sociais-icones{
 
 @media screen and (max-width: 600px) {
 
+    
+
     .grid-dicas {
         width: 600px;
     }
 
     .grid-nutricionista {
-        width: 600px;
+        width: 550px;
     }
 
     .receita-granola img {
@@ -870,6 +898,20 @@ footer .redes-sociais-icones{
     #dicas {
         padding-bottom: 100px;
        
+    }
+
+    .texto-nutricionista h1 {
+        font-size: 20px;
+
+    }
+
+    .texto-nutricionista h2 {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .grid-nutricionista {
+        width: 600px;
     }
 
 }
@@ -953,6 +995,37 @@ footer .redes-sociais-icones{
     }
 
 }
+
+@media screen and (max-width: 320px) {
+    .grid-nutricionista {
+        width: 320px;
+    }
+
+    .receita-granola img {
+        width: 320px;
+        margin-top: 50px;
+    }
+
+    .texto-nutricionista p {
+        font-size: 16px;
+    }
+
+    .elementos-nutricionista img {
+        width: 100px;
+        height: 310px;
+
+    margin-top: 150px;
+    }
+    
+  .grid-dicas {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    
+  }
+
+}
+
 
 
 /* responsividade-header */
