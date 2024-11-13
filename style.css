@@ -146,23 +146,8 @@ header button{
 
 #hero img{
     margin-left: 40px;
-    width: 60%;
+    width: 45%;
 }
-
-/* #hero button{
-    height: 50px;
-    width: 200px;
-
-    color: white;
-    background-color: var(--laranja);
-
-    border: none;
-    margin-top: 40px;
-    border-radius: 8px;
-
-    font-weight: 600;
-    font-size: 1.1rem;
-} */
 
 .btn-hero{
     color: var(--bege);
@@ -462,6 +447,8 @@ header button{
 }
 
 #dicas .text-dicas{
+    font-weight: 300;
+    font-size: 0.85rem;
     color: var(--verde-escuro);
 
     display: flex;
@@ -474,6 +461,11 @@ header button{
 .text-dicas a{
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+.text-dicas span{
+    font-weight: bolder;
+    font-size: 1rem;
 }
 
 /* dicas - dicas - dicas - dicas - dicas - dicas - dicas - dicas - dicas */
