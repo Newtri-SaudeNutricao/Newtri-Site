@@ -39,7 +39,11 @@ html{
 /* header - header - header - header - header - header - header - header */
 
 a:visited {
-    color: inherit;
+    color: var(--verde-escuro);
+}
+
+a{
+    color: var(--verde-escuro);
 }
 
 .btn-hero:visited, .btn-sobre:visited, .btn-contato:visited{

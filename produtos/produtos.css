@@ -119,13 +119,12 @@ header button{
 
 /* produtos texto */
 
-
-
-div.produtos-txt {
+.produtos-txt {
     font-family: 'Poppins';
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     /* height: 27vh; */
     height: fit-content;
     background-image: url(Imagens/Group\ 28\ \(1\).svg);
@@ -134,6 +133,7 @@ div.produtos-txt {
 
 h1.title-p {
     margin-top: 5%;
+    text-align: center;
 }
 
 p.intro-p {
@@ -141,6 +141,7 @@ p.intro-p {
     margin-top: 1%;
     padding-left: 4%;
     padding-right: 4%;
+    max-width: 1200px;
 }
 
 /* produtos texto ^^ */
@@ -148,19 +149,28 @@ p.intro-p {
 /* produtos */
 
 main {
-    height: 130vh;
     color: var(--bege);
     background-color: var(--verde-escuro);
     background-image: url(Imagens/Group\ \(2\).svg);
 }
+
+a:visited {
+    color: var(--verde-escuro);
+}
+
+a{
+    color: var(--verde-escuro);
+}
+
 
 .produto {
     display: flex;
     align-items: center;
     padding: 1%;
 
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
-
 
 
 .funciona-pls{
@@ -169,13 +179,24 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.produto img {
+/* .produto img {
     width: 18vw;
     margin-top: 10vh;
     margin-left: 10vh;
+    border-radius: 5%;
+} */
+
+.imgproduct{
+    width: 18vw;
+    min-width: 280px;
     border-radius: 5%;
 }
 
@@ -192,6 +213,11 @@ main {
 .produto-info p {
     margin-left: 2%;
     text-align: center;
+    max-width: 700px;
+}
+
+.produto-info-r p {
+    max-width: 700px;
 }
 
 /* produto 1 ^^ */
@@ -202,15 +228,14 @@ main {
     display: flex;
     align-items: center;
     padding: 1%;
-    margin-left: 1%;
 }
 
-.produto-r img {
+/* .produto-r img {
     width: 18vw;
     margin-top: 10vh;
     margin-right: 9vh;
     border-radius: 5%;
-}
+} */
 
 .produto-info-r{
     margin-top: 2%;
@@ -231,9 +256,6 @@ main {
 
 footer{
     height: fit-content;
-    margin-top: 7%;
-
-
     font-family: 'Poppins';
     color: var(--verde-escuro);
     background-color: var(--bege);
@@ -430,6 +452,18 @@ footer .redes-sociais-icones{
     ul li .cadastro{
         background-color: var(--bege);
     }
+
+    .produto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .produto-r{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
 
 }
 

@@ -18,6 +18,14 @@
     text-decoration: none;
 }
 
+a:visited {
+    color: var(--verde-escuro);
+}
+
+a{
+    color: var(--verde-escuro);
+}
+
 header{
     height: 15vh;
     background-color: var(--bege);
@@ -126,7 +134,6 @@ body {
 }
 
 h1{
-
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -135,15 +142,14 @@ h1{
     margin-top: 50px;
     
     text-align: center;
-
 }
 
 #sobre p{
-
     width: fit-content;
-    max-width: 750px;
+    max-width: 800px;
 
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    margin-top: 30px;
 
     font-size: 1.2rem;
     font-family: "Poppins";
@@ -195,8 +201,6 @@ h1{
     /* justify-content: center; */
 
     margin-bottom: 50px;
-
-
     
 }
 
@@ -208,7 +212,6 @@ h1{
 
     gap: 150px;
 
-    
 }
 
 .textovisao p{
@@ -256,7 +259,6 @@ h1{
     flex-direction: row;
 
     gap: 150px;
-
 }
 
 .textovalores p{
@@ -537,6 +539,69 @@ footer .redes-sociais-icones{
         min-width: 394px;
     }
 
+    #sobre .teste{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+        gap: unset;
+    }
+
+    #sobre img{
+        width: 315px;
+    }
+
+    #sobre h1{
+        margin-bottom: 100px;
+    }
+
+    .textovisao{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .textovisao p{
+        width: 75%;
+        text-align: center;
+    }
+
+    .visao{
+        margin-top: 10%;
+        margin-left: unset;
+    }
+
+    .textomissao{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .textomissao p{
+        width: 75%;
+        text-align: center;
+    }
+
+    .missao{
+        margin-top: 10%;
+        margin-left: unset;
+    }
+
+    .textovalores{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .textovalores p{
+        width: 75%;
+        text-align: center;
+    }
+
+    .valores{
+        margin-top: 10%;
+        margin-left: unset;
+    }
+
 }
 
 @media screen and (max-width: 900px){
@@ -723,4 +788,3 @@ footer .redes-sociais-icones{
         font-size: 2.1rem;
     }
 }
-

@@ -27,7 +27,11 @@ html{
 /* header - header - header - header - header - header - header - header */
 
 a:visited {
-    color: inherit;
+    color: var(--verde-escuro);
+}
+
+a{
+    color: var(--verde-escuro);
 }
 
 header{
@@ -115,6 +119,15 @@ body{
     background-color:#F3FFE7;
 }
 
+a:visited {
+    color: var(--verde-escuro);
+}
+
+a{
+    color: var(--verde-escuro);
+}
+
+
 h2{
     margin-top: 40px;
 }
@@ -143,6 +156,7 @@ h2{
 
 .campo {
     width: 60%;
+    max-width: 900px;
 
     text-align: left;
 
@@ -155,6 +169,7 @@ h2{
 
 .campo-descricao {
     width: 60%;
+    max-width: 900px;
 
     text-align: left;
 
@@ -286,7 +301,6 @@ footer{
 
 footer img{
     width: 200px;
-    color: var(--bege);
 }
 
 footer h4{
@@ -312,7 +326,7 @@ footer .redes-sociais-icones{
 }
 
 .icon-color:hover{
-    fill: #AAB3A2;
+    fill: var(--verde-claro);
     cursor: pointer;
 }
 
@@ -328,8 +342,12 @@ footer .redes-sociais-icones{
     gap: 10px;
 }
 
+.navegacao ul li{
+    color: var(--bege);
+}
+
 .navegacao ul li:hover{
-    color: #AAB3A2;
+    color: var(--verde-claro);
     cursor: pointer;
 }
 
@@ -347,8 +365,6 @@ footer .redes-sociais-icones{
 
 .text-horario svg, .text-endereco svg{
     margin-right: 25px;
-    
-    
 }
 
 .footer-last{
@@ -429,6 +445,10 @@ footer .redes-sociais-icones{
     ul li .cadastro{
         background-color: var(--bege);
     }
+
+    .footer-row{
+        gap: 175px;
+    }
 }
 
 @media screen and (max-width: 860px){
@@ -491,6 +511,7 @@ footer .redes-sociais-icones{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 100px;
     }
 
     .footer-column{
@@ -498,4 +519,3 @@ footer .redes-sociais-icones{
         flex-direction: column;
     }
 }
-
